@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light" data-pal="maestro" data-aura="on" data-transp="on" data-glass="tudo" data-style="editorial">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maestro OS · Interface nova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="maestro.css">
+</head>
+<body>
+<script>/* celular: abre a versão própria (a não ser que a pessoa tenha escolhido a de computador) */
+try{const q=new URLSearchParams(location.search);if(q.has('desktop'))localStorage.setItem('maestro-desktop','1');
+if(innerWidth<768&&!localStorage.getItem('maestro-desktop'))location.replace('celular.html'+location.hash)}catch(e){}</script>
+<script src="maestro.js"></script>
+<script src="dados.js"></script>
+<script src="ui.js"></script>
+<script src="telas.js"></script>
+<script src="construtor.js"></script>
+<script src="mod-rotina.js"></script>
+<script src="mod-comercial.js"></script>
+<script src="mod-operacao.js"></script>
+<script src="mod-gestao.js"></script>
+<script src="mod-sistema.js"></script>
+<script src="mod-numbers.js"></script>
+<script src="layout.js"></script>
+<script>M.start()</script>
+</body>
+</html>
